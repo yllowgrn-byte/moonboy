@@ -1,7 +1,7 @@
 import TokenBox from "./TokenBox";
 
 const HeroSection = () => (
-  <section className="relative min-h-screen flex flex-col items-end justify-end px-6 pb-24">
+  <section className="relative min-h-screen flex flex-col items-center justify-end px-6 pb-16">
     <video
       autoPlay
       muted
