@@ -15,7 +15,7 @@ const HeroSection = () => (
 
     <div className="absolute inset-0 bg-background/40 z-[1]" />
 
-    <div className="relative z-20 flex flex-col items-center gap-4 max-w-3xl mx-auto text-center">
+    <div className="relative z-20 flex flex-col items-center gap-2 max-w-3xl mx-auto text-center">
       <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-semibold tracking-wide text-foreground text-glow leading-tight"
           style={{ fontVariant: "small-caps" }}>
         just a guy from the moon.
