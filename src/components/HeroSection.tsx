@@ -1,24 +1,26 @@
 import TokenBox from "./TokenBox";
 
 const HeroSection = () => (
-  <section className="relative min-h-screen flex flex-col items-center justify-center px-6">
+  <section className="relative min-h-screen flex flex-col items-end justify-end px-6 pb-24">
     <video
       autoPlay
       muted
       loop
       playsInline
       className="absolute inset-0 w-full h-full object-cover"
-      style={{ filter: "saturate(0.4) brightness(0.5)" }}
+      style={{ filter: "saturate(0) brightness(0.25)" }}
     >
       <source src="/videos/space.mp4" type="video/mp4" />
     </video>
 
-    <div className="relative z-20 flex flex-col items-center gap-10 max-w-5xl mx-auto text-center">
-      <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-semibold tracking-wide text-foreground text-glow leading-tight"
+    <div className="absolute inset-0 bg-background/40 z-[1]" />
+
+    <div className="relative z-20 flex flex-col items-center gap-4 max-w-3xl mx-auto text-center">
+      <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-semibold tracking-wide text-foreground text-glow leading-tight"
           style={{ fontVariant: "small-caps" }}>
         just a guy from the moon.
       </h1>
-      <p className="font-display text-lg md:text-2xl lg:text-3xl font-light tracking-wide max-w-3xl italic text-muted-foreground leading-relaxed">
+      <p className="font-display text-base md:text-xl lg:text-2xl font-light tracking-wide max-w-2xl italic text-muted-foreground leading-relaxed">
         no one really knows where moonboy came from. one day he just appeared, standing on a little pedestal somewhere on the moon.
       </p>
 
