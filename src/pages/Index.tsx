@@ -13,17 +13,8 @@ const Index = () => (
     <HeroSection />
     <CharacterSection />
 
-    <StorySection
-      variant="wide"
-      title="Into the Void"
-      description="In the silent depths of an endless cosmos, a small figure with glowing eyes moves forward through the stardust. The universe feels quiet, yet something enormous watches from the darkness. Moonboy captures a mysterious atmosphere where curiosity and courage guide every step deeper into the unknown."
-      buttons={[
-        { label: "Follow on X", href: "https://x.com/moonboyqt" },
-        { label: "Join Telegram", href: "#" },
-      ]}
-      image={moonboyPedestal}
-      imageAlt="moonboy on his pedestal"
-    />
+    <StorySectionWithBuy />
+
 
     <StorySection
       variant="centered"
