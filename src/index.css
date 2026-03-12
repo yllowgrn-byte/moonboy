@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 3%;
+    --foreground: 220 15% 85%;
+
+    --card: 220 20% 6%;
+    --card-foreground: 220 15% 85%;
+
+    --popover: 220 20% 6%;
+    --popover-foreground: 220 15% 85%;
+
+    --primary: 210 100% 75%;
+    --primary-foreground: 220 20% 3%;
+
+    --secondary: 220 15% 12%;
+    --secondary-foreground: 220 15% 85%;
+
+    --muted: 220 15% 12%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 210 100% 75%;
+    --accent-foreground: 220 20% 3%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 15%;
+    --input: 220 15% 15%;
+    --ring: 210 100% 75%;
+
+    --radius: 0.75rem;
+
+    --glass: 220 20% 8%;
+    --glass-border: 220 15% 18%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Raleway', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Hide scrollbars on all browsers */
+  * {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+  *::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Opera */
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: hsl(var(--glass) / 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--glass-border) / 0.3);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 40px hsl(var(--primary) / 0.3);
+  }
+}
+
+@keyframes moonboy-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: moonboy-float 5s ease-in-out infinite;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s ease-out forwards;
+}
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
