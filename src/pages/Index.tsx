@@ -1,9 +1,11 @@
+import { useState, useCallback } from "react";
 import SpaceDust from "@/components/SpaceDust";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import CharacterSection from "@/components/CharacterSection";
 import StorySection from "@/components/StorySection";
 import Footer from "@/components/Footer";
+import IntroTeaser from "@/components/IntroTeaser";
 import moonboyPedestal from "@/assets/moonboy-pedestal.png";
 import moonboyHeadphones from "@/assets/moonboy-headphones.png";
 import { useConfig } from "@/hooks/useConfig";
@@ -26,34 +28,48 @@ const StorySectionWithBuy = () => {
   );
 };
 
-const Index = () => (
-  <div className="relative min-h-screen bg-background">
-    <Header />
-    <HeroSection />
-    <CharacterSection />
-    <StorySectionWithBuy />
+const Index = () => {
+  const [introDone, setIntroDone] = useState(false);
+  const handleIntroComplete = useCallback(() => setIntroDone(true), []);
 
-    <StorySection
-      variant="centered"
-      title="The Ritual"
-      text={[
-        "sometimes he just sits there,",
-        "puts the headphones on,",
-        "",
-        "plays the same song —",
-        "again, and again, and again.",
-        "",
-        "no one knows what song it is.",
-        "maybe it's the sound of stars collapsing.",
-        "maybe it's lo-fi beats. who knows.",
-      ]}
-      image={moonboyHeadphones}
-      imageAlt="moonboy with headphones"
-    />
+  return (
+    <div className="relative min-h-screen bg-background">
+      {!introDone && <IntroTeaser onComplete={handleIntroComplete} />}
 
-    <Footer />
-    <SpaceDust />
-  </div>
-);
+      <div
+        style={{
+          opacity: introDone ? 1 : 0,
+          transition: "opacity 1s ease-in-out 0.2s",
+        }}
+      >
+        <Header />
+        <HeroSection />
+        <CharacterSection />
+        <StorySectionWithBuy />
+
+        <StorySection
+          variant="centered"
+          title="The Ritual"
+          text={[
+            "sometimes he just sits there,",
+            "puts the headphones on,",
+            "",
+            "plays the same song —",
+            "again, and again, and again.",
+            "",
+            "no one knows what song it is.",
+            "maybe it's the sound of stars collapsing.",
+            "maybe it's lo-fi beats. who knows.",
+          ]}
+          image={moonboyHeadphones}
+          imageAlt="moonboy with headphones"
+        />
+
+        <Footer />
+        <SpaceDust />
+      </div>
+    </div>
+  );
+};
 
 export default Index;
