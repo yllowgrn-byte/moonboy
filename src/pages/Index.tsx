@@ -6,15 +6,32 @@ import StorySection from "@/components/StorySection";
 import Footer from "@/components/Footer";
 import moonboyPedestal from "@/assets/moonboy-pedestal.png";
 import moonboyHeadphones from "@/assets/moonboy-headphones.png";
+import { useConfig } from "@/hooks/useConfig";
+
+const StorySectionWithBuy = () => {
+  const { buyLink } = useConfig();
+  const buttons = [
+    { label: "Follow on X", href: "https://x.com/moonboyqt" },
+    ...(buyLink ? [{ label: "Buy moonboy", href: buyLink }] : []),
+  ];
+  return (
+    <StorySection
+      variant="wide"
+      title="Into the Void"
+      description="In the silent depths of an endless cosmos, a small figure with glowing eyes moves forward through the stardust. The universe feels quiet, yet something enormous watches from the darkness. Moonboy captures a mysterious atmosphere where curiosity and courage guide every step deeper into the unknown."
+      buttons={buttons}
+      image={moonboyPedestal}
+      imageAlt="moonboy on his pedestal"
+    />
+  );
+};
 
 const Index = () => (
   <div className="relative min-h-screen bg-background">
     <Header />
     <HeroSection />
     <CharacterSection />
-
     <StorySectionWithBuy />
-
 
     <StorySection
       variant="centered"
