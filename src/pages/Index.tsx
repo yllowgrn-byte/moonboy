@@ -37,7 +37,9 @@ const Index = () => {
 
   return (
     <div className="relative min-h-screen bg-background">
-      <Header style={{ opacity: showContent ? 1 : 0, transition: "opacity 1.5s ease-in-out" }} />
+      <div style={{ opacity: showContent ? 1 : 0, transition: "opacity 1.5s ease-in-out" }}>
+        <Header />
+      </div>
       <HeroSection showContent={showContent} />
       <div
         style={{
