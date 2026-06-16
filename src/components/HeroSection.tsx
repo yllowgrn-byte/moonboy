@@ -33,10 +33,10 @@ const HeroSection = ({ showContent = true }: Props) => (
     >
       <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-semibold tracking-wide text-foreground text-glow whitespace-nowrap"
           style={{ fontVariant: "small-caps" }}>
-        just a guy from the moon.
+        fuck it. be crazy.
       </h1>
       <p className="font-display text-base md:text-xl lg:text-2xl font-light tracking-wide max-w-2xl italic text-muted-foreground leading-relaxed">
-        no one really knows where moonboy came from. one day he just appeared, standing on a little pedestal somewhere on the moon.
+        no one really knows where crazy came from. one day he just appeared, hood up, mask on, reading the daily delusions like normal was never an option.
       </p>
 
       <TokenBox />

@@ -14,7 +14,7 @@ const Footer = () => (
     <div className="relative z-20 pb-12 text-center">
       <p className="font-display text-lg md:text-xl tracking-[0.3em] text-muted-foreground"
          style={{ fontVariant: "small-caps" }}>
-        © 2026 <span className="text-foreground font-semibold">moonboy</span>. All Rights Reserved.
+        © 2026 <span className="text-foreground font-semibold">crazy</span>. All Rights Reserved.
       </p>
     </div>
   </footer>

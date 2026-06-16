@@ -3,16 +3,16 @@ const Header = () => (
     <div className="w-full px-8 md:px-12 py-6 flex items-center justify-between">
       <span className="font-display text-2xl md:text-3xl font-semibold tracking-[0.2em] lowercase text-foreground"
             style={{ fontVariant: "small-caps" }}>
-        moonboy
+        crazy
       </span>
       <a
-        href="https://x.com/moonboyqt"
+        href="https://x.com/crazyman_sol"
         target="_blank"
         rel="noopener noreferrer"
         className="font-display text-lg md:text-xl text-muted-foreground hover:text-primary transition-colors duration-300 tracking-widest"
         style={{ fontVariant: "small-caps" }}
       >
-        @moonboyqt
+        @crazyman_sol
       </a>
     </div>
   </header>

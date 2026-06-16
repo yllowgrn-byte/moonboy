@@ -1,22 +1,22 @@
 import { useEffect, useRef } from "react";
-import moonboyFace from "@/assets/moonboy-face.png";
+import crazyFace from "@/assets/crazy-face.png";
 
 const cards = [
   {
-    title: "Born on the Moon",
-    text: "No one invited him. No one expected him. He just appeared one day, standing quietly on the lunar surface with glowing eyes.",
+    title: "Born Unhinged",
+    text: "No one invited him. No one expected him. He just appeared one day, hood up, mask on, smiling at a world that forgot how to.",
   },
   {
-    title: "Pure Vibes",
-    text: "Moonboy carries no agenda, no roadmap, no pressure. Just a calm presence drifting through the cosmos on good energy alone.",
+    title: "Pure Chaos",
+    text: "crazy carries no agenda, no roadmap, no pressure. Just a calm, unbothered presence proving that normal is boring.",
   },
   {
-    title: "Zero Gravity",
-    text: "Free from the weight of expectations, moonboy floats where curiosity takes him — unbothered, untethered, unstoppable.",
+    title: "Zero Rules",
+    text: "Free from the weight of expectations, crazy drifts wherever curiosity takes him — unbothered, untethered, unstoppable.",
   },
   {
     title: "Community Soul",
-    text: "The world of moonboy grows through shared imagination, collective wonder, and the quiet magic of those who simply get it.",
+    text: "The world of crazy grows through shared delusions, collective wonder, and the quiet magic of those who simply get it.",
   },
 ];
 
@@ -73,8 +73,8 @@ const CharacterSection = () => {
           {/* Center image */}
           <div className="flex justify-center order-first md:order-none">
             <img
-              src={moonboyFace}
-              alt="moonboy floating in space"
+              src={crazyFace}
+              alt="crazy standing in the dark"
               className="w-72 md:w-80 lg:w-[26rem] object-contain animate-float drop-shadow-[0_0_80px_hsl(210,100%,75%,0.2)]"
             />
           </div>
