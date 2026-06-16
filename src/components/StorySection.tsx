@@ -85,7 +85,7 @@ const StorySection = ({ title, text, description, buttons, image, imageAlt, reve
             <div className="flex justify-center md:justify-end">
               <img
                 src={image}
-                alt={imageAlt || "moonboy"}
+                alt={imageAlt || "crazy"}
                 className="w-full max-w-md lg:max-w-lg xl:max-w-xl object-contain animate-float drop-shadow-[0_0_60px_hsl(210,100%,75%,0.15)]"
               />
             </div>
@@ -129,7 +129,7 @@ const StorySection = ({ title, text, description, buttons, image, imageAlt, reve
           {image && (
             <img
               src={image}
-              alt={imageAlt || "moonboy"}
+              alt={imageAlt || "crazy"}
               className="w-72 md:w-96 lg:w-[28rem] object-contain animate-float drop-shadow-[0_0_40px_hsl(210,100%,75%,0.1)]"
             />
           )}
@@ -176,7 +176,7 @@ const StorySection = ({ title, text, description, buttons, image, imageAlt, reve
           <div className="flex-shrink-0">
             <img
               src={image}
-              alt={imageAlt || "moonboy"}
+              alt={imageAlt || "crazy"}
               className="w-64 md:w-80 lg:w-[28rem] object-contain animate-float drop-shadow-[0_0_40px_hsl(210,100%,75%,0.1)]"
             />
           </div>

@@ -24,7 +24,7 @@ const TokenBox = () => {
           rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 px-8 py-3 border border-foreground/30 hover:bg-foreground/10 text-foreground transition-all duration-300 text-sm font-medium tracking-widest uppercase"
         >
-          Buy moonboy <ExternalLink className="w-3.5 h-3.5" />
+          Buy crazy <ExternalLink className="w-3.5 h-3.5" />
         </a>
       )}
       {tokenAddress && (

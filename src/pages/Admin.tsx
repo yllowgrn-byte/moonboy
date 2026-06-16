@@ -65,7 +65,7 @@ const Admin = () => {
     <div className="min-h-screen bg-background flex items-center justify-center px-6">
       <div className="w-full max-w-md space-y-8">
         <h1 className="text-foreground text-xl font-light tracking-widest lowercase text-center">
-          moonboy admin
+          crazy admin
         </h1>
 
         <div className="space-y-6">
