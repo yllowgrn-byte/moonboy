@@ -41,7 +41,7 @@ const Index = () => {
       <div
         style={{
           opacity: showContent ? 1 : 0,
-          transition: "opacity 1.5s ease-in-out 0.3s",
+          transition: "opacity 3s ease-out 0.6s",
         }}
       >
         <CharacterSection />
