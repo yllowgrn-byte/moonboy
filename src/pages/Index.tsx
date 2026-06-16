@@ -30,7 +30,7 @@ const Index = () => {
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowContent(true), 3000);
+    const timer = setTimeout(() => setShowContent(true), 5000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -41,7 +41,7 @@ const Index = () => {
       <div
         style={{
           opacity: showContent ? 1 : 0,
-          transition: "opacity 1.5s ease-in-out 0.3s",
+          transition: "opacity 3s ease-out 0.6s",
         }}
       >
         <CharacterSection />
