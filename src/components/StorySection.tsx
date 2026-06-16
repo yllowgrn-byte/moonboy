@@ -11,12 +11,13 @@ interface Props {
   description?: string;
   buttons?: ButtonDef[];
   image?: string;
+  videoSrc?: string;
   imageAlt?: string;
   reverse?: boolean;
   variant?: "split" | "centered" | "wide";
 }
 
-const StorySection = ({ title, text, description, buttons, image, imageAlt, reverse, variant = "split" }: Props) => {
+const StorySection = ({ title, text, description, buttons, image, videoSrc, imageAlt, reverse, variant = "split" }: Props) => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -126,7 +127,16 @@ const StorySection = ({ title, text, description, buttons, image, imageAlt, reve
               ))}
             </div>
           )}
-          {image && (
+          {videoSrc ? (
+            <video
+              src={videoSrc}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-72 md:w-96 lg:w-[28rem] object-contain animate-float drop-shadow-[0_0_40px_hsl(210,100%,75%,0.1)]"
+            />
+          ) : image && (
             <img
               src={image}
               alt={imageAlt || "crazy"}

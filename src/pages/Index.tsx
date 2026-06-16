@@ -6,7 +6,6 @@ import CharacterSection from "@/components/CharacterSection";
 import StorySection from "@/components/StorySection";
 import Footer from "@/components/Footer";
 import crazyPedestal from "@/assets/crazy-pedestal.png";
-import crazyHeadphones from "@/assets/crazy-headphones.png";
 import { useConfig } from "@/hooks/useConfig";
 
 const StorySectionWithBuy = () => {
@@ -37,9 +36,7 @@ const Index = () => {
 
   return (
     <div className="relative min-h-screen bg-background">
-      <div style={{ opacity: showContent ? 1 : 0, transition: "opacity 1.5s ease-in-out" }}>
-        <Header />
-      </div>
+      <Header showContent={showContent} />
       <HeroSection showContent={showContent} />
       <div
         style={{
@@ -64,7 +61,7 @@ const Index = () => {
             "maybe it's the sound of static.",
             "maybe it's lo-fi beats. who knows.",
           ]}
-          image={crazyHeadphones}
+          videoSrc="/videos/ritual.mp4"
           imageAlt="crazy with headphones"
         />
 

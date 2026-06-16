@@ -1,6 +1,16 @@
-const Header = () => (
+interface Props {
+  showContent?: boolean;
+}
+
+const Header = ({ showContent = true }: Props) => (
   <header className="absolute top-0 left-0 right-0 z-40">
-    <div className="w-full px-8 md:px-12 py-6 flex items-center justify-between">
+    <div
+      className="w-full px-8 md:px-12 py-6 flex items-center justify-between transition-all duration-[1500ms] ease-in-out"
+      style={{
+        opacity: showContent ? 1 : 0,
+        transform: showContent ? "translateY(0)" : "translateY(-20px)",
+      }}
+    >
       <span className="font-display text-2xl md:text-3xl font-semibold tracking-[0.2em] lowercase text-foreground"
             style={{ fontVariant: "small-caps" }}>
         crazy
