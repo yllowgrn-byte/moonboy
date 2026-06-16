@@ -6,7 +6,6 @@ import CharacterSection from "@/components/CharacterSection";
 import StorySection from "@/components/StorySection";
 import Footer from "@/components/Footer";
 import crazyPedestal from "@/assets/crazy-pedestal.png";
-import crazyHeadphones from "@/assets/crazy-headphones.png";
 import { useConfig } from "@/hooks/useConfig";
 
 const StorySectionWithBuy = () => {
@@ -64,7 +63,7 @@ const Index = () => {
             "maybe it's the sound of static.",
             "maybe it's lo-fi beats. who knows.",
           ]}
-          image={crazyHeadphones}
+          videoSrc="/videos/ritual.mp4"
           imageAlt="crazy with headphones"
         />
 
