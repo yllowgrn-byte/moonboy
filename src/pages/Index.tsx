@@ -30,7 +30,7 @@ const Index = () => {
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowContent(true), 3000);
+    const timer = setTimeout(() => setShowContent(true), 5000);
     return () => clearTimeout(timer);
   }, []);
 
