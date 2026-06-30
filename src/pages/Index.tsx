@@ -10,10 +10,12 @@ import { useConfig } from "@/hooks/useConfig";
 
 const StorySectionWithBuy = () => {
   const { buyLink } = useConfig();
+
   const buttons = [
     { label: "Follow on X", href: "https://x.com/delusionalboyqt" },
     ...(buyLink ? [{ label: "Buy delulu", href: buyLink }] : []),
   ];
+
   return (
     <StorySection
       variant="wide"
@@ -30,7 +32,10 @@ const Index = () => {
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowContent(true), 7000);
+    const timer = setTimeout(() => {
+      setShowContent(true);
+    }, 4200);
+
     return () => clearTimeout(timer);
   }, []);
 
@@ -38,14 +43,16 @@ const Index = () => {
     <div className="relative min-h-screen bg-background">
       <Header showContent={showContent} />
       <HeroSection showContent={showContent} />
+
       <div
-        className="transition-opacity duration-[6s] ease-[cubic-bezier(0.16,1,0.3,1)]"
+        className="transition-opacity duration-[3000ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
         style={{
           opacity: showContent ? 1 : 0,
-          transitionDelay: "1.2s",
+          transitionDelay: "0.5s",
         }}
       >
         <CharacterSection />
+
         <StorySectionWithBuy />
 
         <StorySection
@@ -62,12 +69,13 @@ const Index = () => {
             "thinking about everything.",
             "honestly? probably nothing.",
           ]}
-          videoSrc="/videos/ritual.mp4"
+          videoSrc="/videos/hero.mp4"
           imageAlt="delulu sitting against the wall"
         />
 
         <Footer />
       </div>
+
       <SpaceDust />
     </div>
   );
