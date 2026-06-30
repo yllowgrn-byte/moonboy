@@ -12,40 +12,52 @@ const HeroSection = ({ showContent = true }: Props) => (
       muted
       loop
       playsInline
-      className="absolute inset-0 w-full h-full object-cover transition-all duration-[8s] ease-[cubic-bezier(0.16,1,0.3,1)]"
+      className="absolute inset-0 w-full h-full object-cover transition-all duration-[8000ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
       style={{
-        filter: showContent ? "saturate(0) brightness(0.25)" : "saturate(0.2) brightness(0.45)",
+        filter: showContent
+          ? "saturate(0) brightness(0.25)"
+          : "saturate(0.2) brightness(0.45)",
       }}
     >
       <source src={spaceVideo.url} type="video/mp4" />
     </video>
 
     <div
-      className="absolute inset-0 bg-background/40 z-[1] transition-opacity duration-[8s] ease-[cubic-bezier(0.16,1,0.3,1)]"
-      style={{ opacity: showContent ? 1 : 0 }}
+      className="absolute inset-0 bg-background/40 z-[1] transition-opacity duration-[8000ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
+      style={{
+        opacity: showContent ? 1 : 0,
+      }}
     />
 
     <div
-      className="relative z-20 flex flex-col items-center gap-2 max-w-3xl mx-auto text-center transition-all duration-[8s] ease-[cubic-bezier(0.16,1,0.3,1)]"
+      className="relative z-20 flex flex-col items-center gap-2 max-w-3xl mx-auto text-center transition-all duration-[5000ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
       style={{
         opacity: showContent ? 1 : 0,
-        transform: showContent ? "translateY(0)" : "translateY(120px)",
+        transform: showContent
+          ? "translateY(0px)"
+          : "translateY(40px)",
       }}
     >
-      <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-semibold tracking-wide text-foreground text-glow whitespace-nowrap"
-          style={{ fontVariant: "small-caps" }}>
+      <h1
+        className="font-display text-4xl md:text-6xl lg:text-7xl font-semibold tracking-wide text-foreground text-glow whitespace-nowrap"
+        style={{ fontVariant: "small-caps" }}
+      >
         stay delulu.
       </h1>
+
       <p className="font-display text-base md:text-xl lg:text-2xl font-light tracking-wide max-w-2xl italic text-muted-foreground leading-relaxed">
-        nobody asked him to log on. he just did. durag on, glasses crooked, scrolling his own delusions like the timeline owed him something.
+        nobody asked him to log on. he just did. durag on, glasses crooked,
+        scrolling his own delusions like the timeline owed him something.
       </p>
 
       <TokenBox />
     </div>
 
     <div
-      className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent z-10 transition-opacity duration-[8s] ease-[cubic-bezier(0.16,1,0.3,1)]"
-      style={{ opacity: showContent ? 1 : 0 }}
+      className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent z-10 transition-opacity duration-[8000ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
+      style={{
+        opacity: showContent ? 1 : 0,
+      }}
     />
   </section>
 );
