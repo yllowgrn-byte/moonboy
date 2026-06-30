@@ -1,22 +1,22 @@
 import { useEffect, useRef } from "react";
-import crazyFace from "@/assets/crazy-face.png";
+import deluluFace from "@/assets/delulu-face.png";
 
 const cards = [
   {
-    title: "Born Unhinged",
-    text: "No one invited him. No one expected him. He just appeared one day, hood up, mask on, smiling at a world that forgot how to.",
+    title: "Born Delusional",
+    text: "nobody saw him coming. one tuesday he just logged on, durag tied tight, mind already gone, and somehow we all started agreeing with him.",
   },
   {
-    title: "Pure Chaos",
-    text: "crazy carries no agenda, no roadmap, no pressure. Just a calm, unbothered presence proving that normal is boring.",
+    title: "Pure Cope",
+    text: "no roadmap. no business plan. no thesis. just vibes, a cracked phone screen, and the unshakeable belief that it's all gonna work out somehow.",
   },
   {
-    title: "Zero Rules",
-    text: "Free from the weight of expectations, crazy drifts wherever curiosity takes him — unbothered, untethered, unstoppable.",
+    title: "Zero Plans",
+    text: "delulu doesn't wake up early. he doesn't journal. he just opens the app, posts something unhinged, and lets the universe handle the rest.",
   },
   {
-    title: "Community Soul",
-    text: "The world of crazy grows through shared delusions, collective wonder, and the quiet magic of those who simply get it.",
+    title: "Delulu Gang",
+    text: "every delusion is shared. every cope is communal. if you're here, you already get it — no explanation needed, no permission asked.",
   },
 ];
 
@@ -46,7 +46,7 @@ const CharacterSection = () => {
           className="font-display text-5xl md:text-6xl lg:text-7xl font-semibold text-foreground tracking-wide text-center mb-16 md:mb-24"
           style={{ fontVariant: "small-caps" }}
         >
-          Where It All Begins
+          meet delulu
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
@@ -73,8 +73,8 @@ const CharacterSection = () => {
           {/* Center image */}
           <div className="flex justify-center order-first md:order-none">
             <img
-              src={crazyFace}
-              alt="crazy standing in the dark"
+              src={deluluFace}
+              alt="delulu on his phone"
               className="w-72 md:w-80 lg:w-[26rem] object-contain animate-float drop-shadow-[0_0_80px_hsl(210,100%,75%,0.2)]"
             />
           </div>

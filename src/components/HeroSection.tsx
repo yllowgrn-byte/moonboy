@@ -1,4 +1,5 @@
 import TokenBox from "./TokenBox";
+import spaceVideo from "@/assets/space-video.asset.json";
 
 interface Props {
   showContent?: boolean;
@@ -16,7 +17,7 @@ const HeroSection = ({ showContent = true }: Props) => (
         filter: showContent ? "saturate(0) brightness(0.25)" : "saturate(0.2) brightness(0.45)",
       }}
     >
-      <source src="/videos/space.mp4" type="video/mp4" />
+      <source src={spaceVideo.url} type="video/mp4" />
     </video>
 
     <div
@@ -33,10 +34,10 @@ const HeroSection = ({ showContent = true }: Props) => (
     >
       <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-semibold tracking-wide text-foreground text-glow whitespace-nowrap"
           style={{ fontVariant: "small-caps" }}>
-        fuck it. be crazy.
+        stay delulu.
       </h1>
       <p className="font-display text-base md:text-xl lg:text-2xl font-light tracking-wide max-w-2xl italic text-muted-foreground leading-relaxed">
-        no one really knows where crazy came from. one day he just appeared, hood up, mask on, reading the daily delusions like normal was never an option.
+        nobody asked him to log on. he just did. durag on, glasses crooked, scrolling his own delusions like the timeline owed him something.
       </p>
 
       <TokenBox />
