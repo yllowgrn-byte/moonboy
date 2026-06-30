@@ -5,23 +5,23 @@ import HeroSection from "@/components/HeroSection";
 import CharacterSection from "@/components/CharacterSection";
 import StorySection from "@/components/StorySection";
 import Footer from "@/components/Footer";
-import crazyPedestal from "@/assets/crazy-pedestal.png";
+import deluluPedestal from "@/assets/delulu-pedestal.png";
 import { useConfig } from "@/hooks/useConfig";
 
 const StorySectionWithBuy = () => {
   const { buyLink } = useConfig();
   const buttons = [
-    { label: "Follow on X", href: "https://x.com/crazyman_sol" },
-    ...(buyLink ? [{ label: "Buy crazy", href: buyLink }] : []),
+    { label: "Follow on X", href: "https://x.com/delusionalboyqt" },
+    ...(buyLink ? [{ label: "Buy delulu", href: buyLink }] : []),
   ];
   return (
     <StorySection
       variant="wide"
-      title="Into the Void"
-      description="In the silent depths of an endless night, a small hooded figure with a painted smile moves forward through the noise. The world feels loud, yet something quiet watches from the darkness. crazy captures a mysterious atmosphere where chaos and courage guide every step deeper into the unknown."
+      title="out in the wild"
+      description="cars blurring past, sun blasting, and delulu just kickflips through it like the city owes him rent. no headphones, no fear, no plan — just the skateboard and whatever song is stuck in his head that week."
       buttons={buttons}
-      image={crazyPedestal}
-      imageAlt="crazy standing in the dark"
+      image={deluluPedestal}
+      imageAlt="delulu in the city"
     />
   );
 };
@@ -49,20 +49,20 @@ const Index = () => {
 
         <StorySection
           variant="centered"
-          title="The Ritual"
+          title="just sittin'"
           text={[
-            "sometimes he just sits there,",
-            "puts the headphones on,",
+            "some days he just slides down the wall,",
+            "back flat against the red,",
             "",
-            "plays the same song —",
-            "again, and again, and again.",
+            "phone face down for once,",
+            "no posting, no scrolling, no replies.",
             "",
-            "no one knows what song it is.",
-            "maybe it's the sound of static.",
-            "maybe it's lo-fi beats. who knows.",
+            "thinking about nothing.",
+            "thinking about everything.",
+            "honestly? probably nothing.",
           ]}
           videoSrc="/videos/ritual.mp4"
-          imageAlt="crazy with headphones"
+          imageAlt="delulu sitting against the wall"
         />
 
         <Footer />

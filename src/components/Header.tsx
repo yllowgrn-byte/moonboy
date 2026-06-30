@@ -13,16 +13,16 @@ const Header = ({ showContent = true }: Props) => (
     >
       <span className="font-display text-2xl md:text-3xl font-semibold tracking-[0.2em] lowercase text-foreground"
             style={{ fontVariant: "small-caps" }}>
-        crazy
+        delulu
       </span>
       <a
-        href="https://x.com/crazyman_sol"
+        href="https://x.com/delusionalboyqt"
         target="_blank"
         rel="noopener noreferrer"
         className="font-display text-lg md:text-xl text-muted-foreground hover:text-primary transition-colors duration-300 tracking-widest"
         style={{ fontVariant: "small-caps" }}
       >
-        @crazyman_sol
+        @delusionalboyqt
       </a>
     </div>
   </header>
