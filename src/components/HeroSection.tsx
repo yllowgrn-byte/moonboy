@@ -19,7 +19,7 @@ const HeroSection = ({ showContent = true }: Props) => (
           : "saturate(0.2) brightness(0.45)",
       }}
     >
-      <source src={spaceVideo.url} type="video/mp4" />
+      <source src="/videos/hero.mp4" type="video/mp4" />
     </video>
 
     <div
