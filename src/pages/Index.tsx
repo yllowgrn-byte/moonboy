@@ -69,7 +69,7 @@ const Index = () => {
             "thinking about everything.",
             "honestly? probably nothing.",
           ]}
-          videoSrc="/videos/hero.mp4"
+          videoSrc="/videos/justsittin.mp4"
           imageAlt="delulu sitting against the wall"
         />
 
