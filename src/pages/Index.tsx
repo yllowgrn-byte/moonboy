@@ -39,9 +39,10 @@ const Index = () => {
       <Header showContent={showContent} />
       <HeroSection showContent={showContent} />
       <div
+        className="transition-opacity duration-[6s] ease-[cubic-bezier(0.16,1,0.3,1)]"
         style={{
           opacity: showContent ? 1 : 0,
-          transition: "opacity 5s ease-out 1.2s",
+          transitionDelay: "1.2s",
         }}
       >
         <CharacterSection />
