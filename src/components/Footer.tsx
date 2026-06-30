@@ -10,7 +10,7 @@ const Footer = () => (
       className="absolute inset-0 w-full h-full object-cover"
       style={{ filter: "saturate(0.3) brightness(0.35)" }}
     >
-      <source src={spaceVideo.url} type="video/mp4" />
+      <source src="/videos/hero.mp4" type="video/mp4" />
     </video>
     <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-transparent h-40 z-10" />
     <div className="relative z-20 pb-12 text-center">
